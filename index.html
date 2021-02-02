@@ -57,13 +57,20 @@
 
 <body class="font-sans bg-gray-100 leading-normal tracking-normal h-screen flex flex-col justify-between">
 
-<!------------------------------------ </Header> ------------------------------------>
+<!------------------------------------ <Header> ------------------------------------>
 <nav id="header" class="fixed w-full z-10 top-0">
 
     <div id="progress" class="h-0.5 z-20 top-0"
          style="background:linear-gradient(to right, #C90B0C var(--scroll), transparent 0);"></div>
 
     <div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 pt-3">
+
+        <div class="pl-4 lg:hidden">
+            <a class="no-underline hover:no-underline" href="https://mohabdelaziz95.github.io/">
+                <img class="h-12 rounded-full border-2 border-gray-200"
+                     src="assets/images/me.jpg" alt="Profile Image">
+            </a>
+        </div>
 
         <div class="block lg:hidden px-4 pb-3">
             <button id="nav-toggle"
@@ -79,17 +86,12 @@
              id="nav-content">
             <ul class="list-reset lg:flex justify-center flex-1 items-center">
                 <li class="mr-0">
-                    <a class="inline-block py-2 px-4 text-gray-900 font-bold no-underline" href="index.html">Home</a>
+                    <a class="inline-block py-2 px-4 text-gray-900 font-bold no-underline" href="https://mohabdelaziz95.github.io/">Home</a>
                 </li>
 
                 <li class="mr-0">
                     <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
-                       href="blog.html">Blog</a>
-                </li>
-
-                <li class="mr-0">
-                    <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
-                       href="article-details.html">Post Details</a>
+                       href="https://mohabdelaziz95.github.io/blog">Blog</a>
                 </li>
             </ul>
         </div>
@@ -100,21 +102,22 @@
 <!------------------------------------ <Container> ------------------------------------>
 <div class="container bg-white w-full h-full md:max-w-5xl mx-auto" style="font-family: 'Cardo', serif;">
     <section class="flex flex-col justify-center h-screen">
-        <div class="flex justify-between align-items-center w-4/5 mx-auto">
+
+        <div class="hidden md:inline-flex lg:inline-flex flex justify-between align-items-center w-4/5 mx-auto">
             <div class="py-8">
-                <div class="prose mb-8">
-                    <p class="text-3xl font-black">Mohamed AbdElaziz
+                <div class="prose mb-8 items-center align-middle">
+                    <p class="text-xl lg:text-3xl font-black">Mohamed AbdElaziz
                     </p>
-                    <a class="underline px-16 font-black" href="#">@mohabdelaziz95</a>
-                    <div class="mt-2 px-20">
-                        <a href="#" class="inline-block">
+                    <a class="underline text-xs lg:text-base ml-5 md:ml-10 lg:ml-16 font-black" href="#">@mohabdelaziz95</a>
+                    <div class="mt-2 lg:px-10 md:ml-12">
+                        <a href="https://twitter.com/mohabdelaziz95" target="_blank" class="inline-block">
                             <img src="assets/icons/twitter.svg" alt="twitter" class="w-6 h-6">
                         </a>
-                        <a href="#" class="inline-block">
-                            <img src="assets/icons/github.svg" alt="twitter" class="w-6 h-6">
+                        <a href="https://github.com/mohabdelaziz95" target="_blank" class="inline-block">
+                            <img src="assets/icons/github.svg" alt="github" class="w-6 h-6">
                         </a>
-                        <a href="#" class="inline-block">
-                            <img src="assets/icons/linkedin.svg" alt="twitter" class="w-6 h-6">
+                        <a href="https://www.linkedin.com/in/mohabdelaziz95/" target="_blank" class="inline-block">
+                            <img src="assets/icons/linkedin.svg" alt="linkedin" class="w-6 h-6">
                         </a>
                     </div>
                 </div>
@@ -127,21 +130,65 @@
 
             <div class="py-8">
                 <div class="prose mb-8">
-                    <h1 class="text-3xl font-black">Backend Engineer</h1>
-                    <p class="text-base font-semibold">
-                        <a class="underline px-16 font-black"
-                           href="https://twitter.com/zubairmohsin33">@robustastudio,</a>
+                    <h1 class="text-xl lg:text-3xl font-black">Backend Engineer</h1>
+                    <p class="text-xs lg:text-base font-semibold">
+                        <a class="text-xs lg:text-base underline md:px-10 lg:px-16 font-black"
+                           href="https://robustastudio.com/" target="_blank">
+                            @robustastudio,
+                        </a>
                         <br>
-                        <a class="underline px-24 font-black" href="https://twitter.com/zubairmohsin33">@olx</a>
+                        <a class="text-xs lg:text-base underline md:px-16 lg:px-24 font-black"
+                           href="https://www.olx.com.eg/en/" target="_blank">
+                            @olx
+                        </a>
                     </p>
                     <p class="text-lg"></p>
                 </div>
             </div>
         </div>
 
+        <div class="lg:hidden md:hidden px-5 align-items-center justify-center">
+            <div class="mb-8"><h2 class="text-xl font-bold pb-5">Who am I?</h2>
+                <p>Hello I am</p>
+                <h2 class="text-lg font-black">
+                    Mohamed AbdElaziz <a class="underline text-sm text-gray-900 font-bold" href="https://twitter.com/mohabdelaziz95">(@mohabdelaziz95)</a>
+                </h2>
+                <h2 class="text-lg font-black">a Backend Engineer.</h2>
+                <p> I work
+                    <a class="underline font-bold" target="_blank"
+                       href="https://robustastudio.com/">
+                        <strong>@robustastudio</strong>
+                    </a>,
+                    <a class="underline font-bold" target="_blank"
+                       href="https://www.olx.com.eg/en/">
+                        <strong>@olx</strong>
+                    </a>
+                </p>
+                <ul class="flex space-x-2 list-none pt-2">
+                    <li>
+                        <a href="https://twitter.com/mohabdelaziz95" target="_blank" class="inline-block">
+                            <img src="assets/icons/twitter.svg" alt="twitter" class="w-6 h-6">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/mohabdelaziz95" target="_blank" class="inline-block">
+                            <img src="assets/icons/github.svg" alt="github" class="w-6 h-6">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/mohabdelaziz95/" target="_blank" class="inline-block">
+                            <img src="assets/icons/linkedin.svg" alt="linkedin" class="w-6 h-6">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="border-b-1 border-gray-400 mb-1 mx-4 rounded">
+        </div>
+
         <div class="mx-auto">
             <blockquote style="font-family: 'Reem Kufi', sans-serif; quotes: '\201C''\201D''\2018''\2019';"
-                        class="text-2xl my-8">
+                        class="text-xs md:text-base lg:text-2xl leading-loose my-8 mx-5">
                 <p>
                     كل مجهول يبدو صعبا لأول مره، ثم
                     إذا اعمل الإنسان فيه عقله واجتهد هان عليه الصعب، وأدرك منه غايته
