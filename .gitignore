@@ -110,3 +110,5 @@ fabric.properties
 .DS_Store
 assets/images/.DS_Store
 .idea/
+/assets/images/.DS_Store
+assets/images/.DS_Store
